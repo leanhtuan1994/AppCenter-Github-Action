@@ -71,7 +71,7 @@ jobs:
     - name: build release
       run: ./gradlew assembleRelease
     - name: upload artefact to App Center
-      uses: wzieba/AppCenter-Github-Action@v1
+      uses: leanhtuan1994/AppCenter-Github-Action@v1
       with:
         appName: wzieba/Sample-App
         token: ${{secrets.APP_CENTER_TOKEN}}

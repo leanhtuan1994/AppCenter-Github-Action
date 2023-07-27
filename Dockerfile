@@ -1,9 +1,9 @@
-FROM node:12.10.0-alpine
+FROM node:18.17.0
 
 WORKDIR /app
 COPY . /app
 
-RUN npm install -g appcenter-cli@2.10.10 \
+RUN npm install -g appcenter-cli@2.13.10 \
     && apk update \
     && apk add git \
     && apk add bash
